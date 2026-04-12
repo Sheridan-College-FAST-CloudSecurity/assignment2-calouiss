@@ -1,0 +1,40 @@
+{
+  "profiles": [
+    {
+      "profile_id": "student_A",
+      "description": "Second-year student entering Fall, completed Year 1 courses on track",
+      "completed_courses": ["INFO10001", "INFO10002", "COMM10001", "INFO10003", "INFO10004", "INFO10005"],
+      "current_term": "Fall",
+      "current_year": 2,
+      "constraints": {
+        "max_courses_per_term": 5,
+        "notes": "Works part-time Fridays, prefers lighter schedule"
+      }
+    },
+    {
+      "profile_id": "student_B",
+      "description": "Third-year student entering Fall, missed INFO20005 (Network Security) and INFO20004 (Software Engineering) in Year 2 Winter",
+      "completed_courses": [
+        "INFO10001", "INFO10002", "COMM10001", "INFO10003", "INFO10004", "INFO10005",
+        "INFO20001", "INFO20002", "INFO20003", "INFO20006", "MATH20001"
+      ],
+      "current_term": "Fall",
+      "current_year": 3,
+      "constraints": {
+        "max_courses_per_term": 4,
+        "notes": "Needs to catch up on INFO20005 and INFO20004. Wants to graduate on time. Must take these before Year 3 Winter courses that depend on them."
+      }
+    },
+    {
+      "profile_id": "student_C",
+      "description": "First-year student entering Fall, no prior courses",
+      "completed_courses": [],
+      "current_term": "Fall",
+      "current_year": 1,
+      "constraints": {
+        "max_courses_per_term": 5,
+        "notes": "Interested in AI electives long-term."
+      }
+    }
+  ]
+}

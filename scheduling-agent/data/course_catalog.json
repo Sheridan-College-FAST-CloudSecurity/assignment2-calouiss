@@ -1,0 +1,323 @@
+{
+  "program": {
+    "name": "Honours Bachelor of Information Sciences — Cybersecurity",
+    "code": "BICS",
+    "institution": "Sheridan College",
+    "total_credits_required": 40,
+    "core_credits_required": 30,
+    "elective_credits_required": 10,
+    "max_courses_per_term": 5,
+    "terms_per_year": ["Fall", "Winter"],
+    "summer_available": true
+  },
+  "courses": [
+    {
+      "course_id": "INFO10001",
+      "name": "Introduction to Programming",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": [],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 1,
+      "description": "Fundamentals of programming using Python. Variables, control flow, functions, and basic data structures."
+    },
+    {
+      "course_id": "INFO10002",
+      "name": "Discrete Mathematics",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": [],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 1,
+      "description": "Logic, sets, relations, functions, combinatorics, and graph theory for computing."
+    },
+    {
+      "course_id": "COMM10001",
+      "name": "Professional Communications",
+      "credits": 2,
+      "type": "core",
+      "prerequisites": [],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter", "Summer"],
+      "year_level": 1,
+      "description": "Written and oral communication skills for technology professionals."
+    },
+    {
+      "course_id": "INFO10003",
+      "name": "Data Structures and Algorithms",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10001"],
+      "corequisites": ["INFO10002"],
+      "offered_terms": ["Winter"],
+      "year_level": 1,
+      "description": "Arrays, linked lists, trees, graphs, sorting, and searching algorithms."
+    },
+    {
+      "course_id": "INFO10004",
+      "name": "Web Development Fundamentals",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10001"],
+      "corequisites": [],
+      "offered_terms": ["Winter", "Summer"],
+      "year_level": 1,
+      "description": "HTML, CSS, JavaScript, and introductory server-side development."
+    },
+    {
+      "course_id": "INFO10005",
+      "name": "Networking Fundamentals",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": [],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 1,
+      "description": "OSI model, TCP/IP, routing, switching, and network protocols."
+    },
+    {
+      "course_id": "INFO20001",
+      "name": "Database Systems",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10003"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 2,
+      "description": "Relational databases, SQL, normalization, indexing, and transaction management."
+    },
+    {
+      "course_id": "INFO20002",
+      "name": "Operating Systems",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10003"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 2,
+      "description": "Processes, memory management, file systems, and concurrency."
+    },
+    {
+      "course_id": "INFO20003",
+      "name": "Introduction to Cybersecurity",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10005"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 2,
+      "description": "Threat landscape, security principles, risk assessment, and compliance frameworks."
+    },
+    {
+      "course_id": "INFO20004",
+      "name": "Software Engineering",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10003", "INFO10004"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 2,
+      "description": "SDLC, Agile, requirements, design patterns, testing, and version control."
+    },
+    {
+      "course_id": "INFO20005",
+      "name": "Network Security",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10005", "INFO20003"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 2,
+      "description": "Firewalls, IDS/IPS, VPNs, wireless security, and network hardening."
+    },
+    {
+      "course_id": "INFO20006",
+      "name": "Cloud Computing Fundamentals",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO20002"],
+      "corequisites": [],
+      "offered_terms": ["Winter", "Summer"],
+      "year_level": 2,
+      "description": "AWS/Azure fundamentals, IaaS, PaaS, SaaS, virtualization, and containers."
+    },
+    {
+      "course_id": "MATH20001",
+      "name": "Statistics for Data Science",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10002"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 2,
+      "description": "Probability, distributions, hypothesis testing, regression, and statistical inference."
+    },
+    {
+      "course_id": "INFO30001",
+      "name": "Ethical Hacking and Penetration Testing",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO20005"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 3,
+      "description": "Reconnaissance, scanning, exploitation, post-exploitation, and reporting."
+    },
+    {
+      "course_id": "INFO30002",
+      "name": "Artificial Intelligence Fundamentals",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO10003", "MATH20001"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 3,
+      "description": "Search, knowledge representation, ML fundamentals, and neural networks."
+    },
+    {
+      "course_id": "INFO30003",
+      "name": "Cloud Security Architecture",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO20006", "INFO20005"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 3,
+      "description": "IAM, encryption, compliance, security monitoring, and incident response in cloud."
+    },
+    {
+      "course_id": "INFO30004",
+      "name": "Digital Forensics",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO20003"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 3,
+      "description": "Evidence collection, disk forensics, memory forensics, and chain of custody."
+    },
+    {
+      "course_id": "INFO30005",
+      "name": "Secure Application Development",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO20004", "INFO20003"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 3,
+      "description": "OWASP Top 10, secure coding, threat modeling, and security testing."
+    },
+    {
+      "course_id": "INFO30006",
+      "name": "Machine Learning",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO30002", "MATH20001"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 3,
+      "description": "Supervised and unsupervised learning, model evaluation, feature engineering."
+    },
+    {
+      "course_id": "INFO30007",
+      "name": "DevOps and CI/CD",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO20004", "INFO20006"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 3,
+      "description": "Docker, Kubernetes, Jenkins, GitHub Actions, infrastructure as code."
+    },
+    {
+      "course_id": "INFO40001",
+      "name": "GenAI Security",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO30002", "INFO30003"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 4,
+      "description": "LLM security, prompt injection, agent frameworks, AI risk assessment."
+    },
+    {
+      "course_id": "INFO40002",
+      "name": "Capstone Project I",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO30001", "INFO30003"],
+      "corequisites": [],
+      "offered_terms": ["Fall"],
+      "year_level": 4,
+      "description": "Industry-partnered project: proposal, design, and initial implementation."
+    },
+    {
+      "course_id": "INFO40003",
+      "name": "Capstone Project II",
+      "credits": 3,
+      "type": "core",
+      "prerequisites": ["INFO40002"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 4,
+      "description": "Industry-partnered project: implementation, testing, deployment, and presentation."
+    },
+    {
+      "course_id": "INFO40004",
+      "name": "Governance, Risk, and Compliance",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO20003"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 4,
+      "description": "ISO 27001, NIST, SOC 2, privacy regulations, and audit processes."
+    },
+    {
+      "course_id": "INFO40005",
+      "name": "Advanced Cloud Architecture",
+      "credits": 3,
+      "type": "elective",
+      "prerequisites": ["INFO30003"],
+      "corequisites": [],
+      "offered_terms": ["Winter"],
+      "year_level": 4,
+      "description": "Multi-region, serverless, microservices, cost optimization, and HA/DR."
+    },
+    {
+      "course_id": "ELEC10001",
+      "name": "Introduction to Business",
+      "credits": 2,
+      "type": "elective",
+      "prerequisites": [],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter", "Summer"],
+      "year_level": 1,
+      "description": "Business fundamentals, entrepreneurship, and technology commercialization."
+    },
+    {
+      "course_id": "ELEC20001",
+      "name": "Project Management",
+      "credits": 2,
+      "type": "elective",
+      "prerequisites": ["COMM10001"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter"],
+      "year_level": 2,
+      "description": "Agile and waterfall PM, scheduling, budgeting, and stakeholder management."
+    },
+    {
+      "course_id": "ELEC30001",
+      "name": "Technical Writing",
+      "credits": 2,
+      "type": "elective",
+      "prerequisites": ["COMM10001"],
+      "corequisites": [],
+      "offered_terms": ["Fall", "Winter", "Summer"],
+      "year_level": 3,
+      "description": "Documentation standards, API docs, user guides, and report writing."
+    }
+  ]
+}
