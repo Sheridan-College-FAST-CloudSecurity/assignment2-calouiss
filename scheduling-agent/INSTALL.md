@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Python 3.10+
-- AWS CLI configured with access to Bedrock in `ca-central-1`
+- AWS CLI configured with access to Bedrock in `us-east-1`
 - Docker Desktop (for bonus AgentCore deployment)
 
 ## Setup
@@ -26,7 +26,7 @@
    export AWS_ACCESS_KEY_ID=your_key
    export AWS_SECRET_ACCESS_KEY=your_secret
    export AWS_SESSION_TOKEN=your_token
-   export AWS_DEFAULT_REGION=ca-central-1
+   export AWS_DEFAULT_REGION=us-east-1
    ```
 
 ## Running the Notebook
@@ -74,6 +74,6 @@ docker run --rm -p 8080:8080 \
   -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
   -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
   -e AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN \
-  -e AWS_DEFAULT_REGION=ca-central-1 \
+  -e AWS_DEFAULT_REGION=us-east-1 \
   scheduling-agent:latest
 ```
